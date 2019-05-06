@@ -48,5 +48,8 @@
         "streaks",
         "cli"
     ],
-    "bin": "./bin/cli.js"
+    "bin": {
+        "github-contribution-stats-cli": "./bin/cli.js",
+        "github-contribution-stats": "./bin/cli.js"
+    }
 }
