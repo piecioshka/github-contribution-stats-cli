@@ -2,7 +2,6 @@
 
 [![npm version](https://badge.fury.io/js/github-contribution-stats-cli.svg)](https://badge.fury.io/js/github-contribution-stats-cli)
 [![downloads count](https://img.shields.io/npm/dt/github-contribution-stats-cli.svg)](https://www.npmjs.com/~piecioshka)
-[![dependencies](https://david-dm.org/piecioshka/github-contribution-stats-cli.svg)](https://github.com/piecioshka/github-contribution-stats-cli)
 [![travis](https://img.shields.io/travis/piecioshka/github-contribution-stats-cli.svg)](https://travis-ci.org/piecioshka/github-contribution-stats-cli)
 [![coveralls](https://coveralls.io/repos/github/piecioshka/github-contribution-stats-cli/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/github-contribution-stats-cli?branch=master)
 [![snyk](https://snyk.io/test/github/piecioshka/github-contribution-stats-cli/badge.svg?targetFile=package.json)](https://snyk.io/test/github/piecioshka/github-contribution-stats-cli?targetFile=package.json)
