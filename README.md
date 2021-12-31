@@ -23,7 +23,8 @@ github-contribution-stats <login> [-d days]
 ex.
 
 ```bash
-github-contribution-stats zaiste -d 30
+github-contribution-stats piecioshka # default days=20
+github-contribution-stats piecioshka -d 30
 ```
 
 ## Unit tests
@@ -49,7 +50,7 @@ Thanks [@moqada][1] for make a package [github-contribution-stats][2] :tada:
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2019
+[The MIT License](http://piecioshka.mit-license.org) @ 2019-2021
 
 [1]: https://github.com/moqada
 [2]: https://github.com/moqada/github-contribution-stats
