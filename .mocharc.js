@@ -13,5 +13,5 @@ module.exports = {
     // reporter: 'min', // clears the terminal
     // reporter: 'dot',
 
-    growl: true,
+    growl: false,
 };

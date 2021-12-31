@@ -1,5 +1,5 @@
 const { assert } = require('chai');
-const fetcher = require('../src');
+const fetcher = require('.');
 
 const isObject = (o) => typeof o === 'object' && o !== null;
 

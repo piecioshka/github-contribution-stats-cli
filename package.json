@@ -11,11 +11,11 @@
   "scripts": {
     "clear": "rm -rf dist/ coverage/ .nyc_output/",
     "clear:all": "rm -rf node_modules/ && npm run clear",
-    "test": "mocha --sort",
-    "test:watch": "mocha --watch",
-    "start": "node index.js",
-    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
-    "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
+    "test": "mocha src/*.spec.js --sort",
+    "test:watch": "mocha src/*.spec.js --watch",
+    "start": "node src/index.js",
+    "coverage": "nyc npm run test && nyc report --reporter=html",
+    "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
     "lint": "eslint .",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
