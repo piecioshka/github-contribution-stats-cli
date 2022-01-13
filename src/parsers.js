@@ -5,7 +5,7 @@ function parseContributions(list, days) {
     const result = [];
     const croppedList = list.slice(list.length - days);
 
-    croppedList.forEach((item) => {
+    croppedList.forEach(item => {
         result[item.date] = item.count;
     });
 

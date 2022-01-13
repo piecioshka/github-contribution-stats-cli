@@ -1,7 +1,9 @@
 const { assert } = require('chai');
 const fetcher = require('.');
 
-const isObject = (o) => typeof o === 'object' && o !== null;
+function isObject(o) {
+    return typeof o === 'object' && o !== null;
+}
 
 suite('index', () => {
     test('to be function', () => {
@@ -14,7 +16,7 @@ suite('index', () => {
     });
 
     test('should returns real data', async () => {
-        const data = await fetcher({ login: 'piecioshka'});
+        const data = await fetcher({ login: 'piecioshka' });
         assert.ok(Array.isArray(data.contributions));
         assert.ok(isObject(data.currentStreak));
         assert.ok(isObject(data.longestStreak));
