@@ -1,57 +1,60 @@
 {
-  "name": "github-contribution-stats-cli",
-  "description": "CLI for read GitHub Contributions and Streaks",
-  "version": "1.0.2",
-  "license": "MIT",
-  "author": {
-    "name": "Piotr Kowalski",
-    "email": "piecioshka@gmail.com",
-    "url": "https://piecioshka.pl/"
-  },
-  "scripts": {
-    "clear": "rm -rf dist/ coverage/ .nyc_output/",
-    "clear:all": "rm -rf node_modules/ && npm run clear",
-    "test": "mocha src/*.spec.js --sort",
-    "test:watch": "mocha src/*.spec.js --watch",
-    "start": "node src/index.js",
-    "coverage": "nyc npm run test && nyc report --reporter=html",
-    "lint": "eslint .",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
-  },
-  "dependencies": {
-    "ascii-histogram": "^1.2.1",
-    "colors": "^1.4.0",
-    "github-contribution-stats": "^0.3.0",
-    "snyk": "^1.826.0",
-    "turtler": "^1.1.1",
-    "yargs": "^17.3.1"
-  },
-  "devDependencies": {
-    "chai": "^4.3.4",
-    "eslint": "^8.6.0",
-    "eslint-config-piecioshka": "^2.0.4",
-    "mocha": "^9.1.3",
-    "nyc": "^15.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:piecioshka/github-contribution-stats-cli.git"
-  },
-  "files": [
-    "bin",
-    "src"
-  ],
-  "keywords": [
-    "github",
-    "stats",
-    "contributions",
-    "streaks",
-    "cli"
-  ],
-  "bin": {
-    "github-contribution-stats-cli": "./bin/cli.js",
-    "github-contribution-stats": "./bin/cli.js"
-  },
-  "snyk": true
+    "name": "github-contribution-stats-cli",
+    "description": "CLI for read GitHub Contributions and Streaks",
+    "version": "1.0.2",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "https://piecioshka.pl/"
+    },
+    "scripts": {
+        "clear": "rm -rf dist/ coverage/ .nyc_output/",
+        "clear:all": "rm -rf node_modules/ && npm run clear",
+        "test": "mocha src/*.spec.js --sort",
+        "test:watch": "mocha src/*.spec.js --watch",
+        "start": "node src/index.js",
+        "coverage": "nyc npm run test && nyc report --reporter=html",
+        "lint": "eslint .",
+        "snyk-protect": "snyk protect",
+        "prepare": "npm run snyk-protect"
+    },
+    "dependencies": {
+        "ascii-histogram": "^1.2.1",
+        "colors": "^1.4.0",
+        "github-contribution-stats": "^0.3.0",
+        "snyk": "^1.826.0",
+        "turtler": "^1.1.1",
+        "yargs": "^17.3.1"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "eslint": "^8.6.0",
+        "eslint-config-piecioshka": "^2.0.4",
+        "mocha": "^9.1.3",
+        "nyc": "^15.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:piecioshka/github-contribution-stats-cli.git"
+    },
+    "files": [
+        "bin",
+        "src"
+    ],
+    "keywords": [
+        "github",
+        "stats",
+        "contributions",
+        "streaks",
+        "cli"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "bin": {
+        "github-contribution-stats-cli": "./bin/cli.js",
+        "github-contribution-stats": "./bin/cli.js"
+    },
+    "snyk": true
 }
