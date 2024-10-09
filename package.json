@@ -1,7 +1,7 @@
 {
     "name": "github-contribution-stats-cli",
     "description": "CLI for read GitHub Contributions and Streaks",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
