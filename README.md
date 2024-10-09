@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/github-contribution-stats-cli.svg)](https://badge.fury.io/js/github-contribution-stats-cli)
 [![downloads count](https://img.shields.io/npm/dt/github-contribution-stats-cli.svg)](https://www.npmjs.com/~piecioshka)
 [![license](https://img.shields.io/npm/l/github-contribution-stats-cli.svg)](https://www.npmjs.com/package/github-contribution-stats-cli)
-[![travis-ci](https://api.travis-ci.com/piecioshka/github-contribution-stats-cli.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/github-contribution-stats-cli)
+[![github-ci](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/testing.yml)
 
 :hammer: CLI for read GitHub Contributions and Streaks
 
