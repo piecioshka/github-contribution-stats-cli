@@ -38,7 +38,7 @@ Thanks [@moqada][1] for make a package [github-contribution-stats][2] :tada:
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2019
+[The MIT License](https://piecioshka.mit-license.org) @ 2019
 
 [1]: https://github.com/moqada
 [2]: https://github.com/moqada/github-contribution-stats
