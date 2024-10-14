@@ -38,9 +38,16 @@
         "type": "git",
         "url": "git+ssh://git@github.com/piecioshka/github-contribution-stats-cli.git"
     },
+    "engines": {
+        "node": ">=10"
+    },
     "files": [
         "bin",
-        "src"
+        "src",
+        "LICENSE",
+        "package.json",
+        "README.md",
+        "!**/*.spec.*"
     ],
     "keywords": [
         "github",
@@ -49,11 +56,7 @@
         "streaks",
         "cli"
     ],
-    "engines": {
-        "node": ">=10"
-    },
     "bin": {
-        "github-contribution-stats-cli": "bin/cli.js",
         "github-contribution-stats": "bin/cli.js"
     },
     "snyk": true
