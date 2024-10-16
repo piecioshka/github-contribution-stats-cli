@@ -1,6 +1,6 @@
 {
     "name": "github-contribution-stats-cli",
-    "description": "CLI for read GitHub Contributions and Streaks",
+    "description": "🔨 CLI for read GitHub Contributions and Streaks",
     "version": "1.0.7",
     "license": "MIT",
     "author": {
