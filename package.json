@@ -50,11 +50,11 @@
         "!**/*.spec.*"
     ],
     "keywords": [
+        "cli",
         "github",
         "stats",
         "contributions",
-        "streaks",
-        "cli"
+        "streaks"
     ],
     "bin": {
         "github-contribution-stats": "bin/cli.js"
