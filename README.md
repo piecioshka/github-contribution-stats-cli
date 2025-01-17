@@ -36,11 +36,8 @@ github-contribution-stats piecioshka -d 30
 
 ## Credits
 
-Thanks [@moqada][1] for make a package [github-contribution-stats][2] 🤝
+Thanks [@moqada](https://github.com/moqada) for make a package [github-contribution-stats](https://github.com/moqada/github-contribution-stats) 🤝
 
 ## License
 
 [The MIT License](https://piecioshka.mit-license.org) @ 2019
-
-[1]: https://github.com/moqada
-[2]: https://github.com/moqada/github-contribution-stats

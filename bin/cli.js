@@ -15,7 +15,7 @@ const {
 
 const DEFAULT_DAYS = 20;
 const argv = yargs
-    .usage('Display GitHub Contributions and Streaks\n\n  $ $0 <login> [-d days]')
+    .usage('Usage: $0 <login> [-d days]')
     .option('days', {
         alias: 'd',
         describe: `Set number of days (counting for today) which are displayed in barplot (default: ${DEFAULT_DAYS})`
