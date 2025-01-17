@@ -1,6 +1,6 @@
 # github-contribution-stats-cli
 
-[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](https://runkit.com/npm/github-contribution-stats-cli)
+[![cli-available](https://badgen.net/static/cli/available/?icon=terminal)](#cli)
 [![node version](https://img.shields.io/node/v/github-contribution-stats-cli.svg)](https://www.npmjs.com/package/github-contribution-stats-cli)
 [![npm version](https://badge.fury.io/js/github-contribution-stats-cli.svg)](https://badge.fury.io/js/github-contribution-stats-cli)
 [![downloads count](https://img.shields.io/npm/dt/github-contribution-stats-cli.svg)](https://www.npmjs.com/~piecioshka)
