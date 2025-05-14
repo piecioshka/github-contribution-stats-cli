@@ -25,6 +25,24 @@ const argv = yargs
 const login = String(argv._);
 const days = Number(argv.days) || DEFAULT_DAYS;
 
+async function getStats() {
+    try {
+        return await fetcher({ login });
+    } catch (err) {
+        console.debug(err);
+        return {
+            contributions: [],
+            currentStreak: {
+                unmeasurable: true
+            },
+            longestStreak: {
+                unmeasurable: true
+            },
+            summary: {}
+        };
+    }
+}
+
 (async () => {
     if (!login) {
         yargs.showHelp();
@@ -33,10 +51,10 @@ const days = Number(argv.days) || DEFAULT_DAYS;
 
     try {
         const pkg = await fetchPackageMetadata();
-        console.log(`  GitHub contributions statistics: ${colors.bold(colors.blue(login))}`);
-        console.log(colors.gray(`  Version: ${pkg.version}\n`));
+        console.log(`GitHub contributions statistics: ${colors.bold(colors.blue(login))}`);
+        console.log(colors.gray(`Version: ${pkg.version}\n`));
 
-        const stats = await fetcher({ login });
+        const stats = await getStats();
 
         const contr = parseContributions(stats.contributions, days);
         console.log(contr);

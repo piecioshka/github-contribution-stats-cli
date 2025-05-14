@@ -9,9 +9,7 @@ function parseContributions(list, days) {
         result[item.date] = item.count;
     });
 
-    const options = {};
-
-    return barplot(result, options);
+    return barplot(result);
 }
 
 function parseRange(range) {
@@ -23,33 +21,35 @@ function parseRange(range) {
 
 function parseCurrentStreak(streak) {
     return [
-        '  * Current streak',
+        '- Current streak',
         (!streak.unmeasurable)
             ? colors.cyan(`${streak.days} days ${parseRange(streak)}`)
-            : ''
+            : '<unmeasurable>'
     ];
 }
 
 function parseLongestStreak(streak) {
     return [
-        '  * Longest streak',
+        '- Longest streak',
         (!streak.unmeasurable)
             ? colors.magenta(`${streak.days} days ${parseRange(streak)}`)
-            : ''
+            : '<unmeasurable>'
     ];
 }
 
 function parseSummary(summary) {
     return [
         [
-            '  * Busiest day',
+            '- Busiest day',
             summary.busiestDay
                 ? colors.red(`${summary.busiestDay.count} contributions (${summary.busiestDay.date})`)
-                : '-'
+                : 'unknown'
         ],
         [
-            '  * Total contributions',
-            colors.green(`${summary.total} contributions`)
+            '- Total contributions',
+            summary.total
+                ? colors.yellow(`${summary.total} contributions`)
+                : 'unknown'
         ]
     ];
 }
