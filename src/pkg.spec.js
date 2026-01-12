@@ -1,6 +1,4 @@
 const fetchPackageMetadata = require('./pkg');
-const fs = require('fs');
-const path = require('path');
 
 describe('pkg', () => {
     test('should be a function', () => {

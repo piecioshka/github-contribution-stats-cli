@@ -10,7 +10,7 @@ module.exports = {
         // amd: true,
         mocha: true,
         // jasmine: true,
-        // jest: true,
+        jest: true,
         // jquery: true,
     },
 
