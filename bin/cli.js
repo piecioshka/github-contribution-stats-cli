@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const yargs = require('yargs');
+const minimist = require('minimist');
 const colors = require('colors');
 const Turtler = require('turtler');
 
@@ -14,16 +14,21 @@ const {
 } = require('../src/parsers');
 
 const DEFAULT_DAYS = 20;
-const argv = yargs
-    .usage('Usage: $0 <login> [-d days]')
-    .option('days', {
-        alias: 'd',
-        describe: `Set number of days (counting for today) which are displayed in barplot (default: ${DEFAULT_DAYS})`
-    })
-    .argv;
+const argv = minimist(process.argv.slice(2), {
+    alias: {
+        d: 'days'
+    }
+});
 
-const login = String(argv._);
+const login = String(argv._[0] || '');
 const days = Number(argv.days) || DEFAULT_DAYS;
+
+function showHelp() {
+    console.log('Usage: github-contribution-stats <login> [-d days]');
+    console.log('');
+    console.log('Options:');
+    console.log(`  -d, --days    Set number of days (counting for today) which are displayed in barplot (default: ${DEFAULT_DAYS})`);
+}
 
 async function getStats() {
     try {
@@ -45,7 +50,7 @@ async function getStats() {
 
 (async () => {
     if (!login) {
-        yargs.showHelp();
+        showHelp();
         return;
     }
 
