@@ -18,17 +18,18 @@
         "lint": "eslint ."
     },
     "dependencies": {
+        "@types/jest": "^30.0.0",
         "ascii-histogram": "^1.2.1",
         "colors": "^1.4.0",
         "github-contribution-stats": "^0.3.0",
         "minimist": "^1.2.8",
-        "snyk": "^1.826.0",
+        "snyk": "^1.1301.2",
         "turtler": "^1.1.1"
     },
     "devDependencies": {
         "eslint": "^8.6.0",
-        "eslint-config-piecioshka": "^2.0.4",
-        "jest": "^29.7.0"
+        "eslint-config-piecioshka": "^2.3.7",
+        "jest": "^30.2.0"
     },
     "repository": {
         "type": "git",
