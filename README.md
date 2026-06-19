@@ -10,6 +10,8 @@
 
 🔨 CLI for read GitHub Contributions and Streaks
 
+![](demo/github-contribution-stats.gif)
+
 ## CLI
 
 Installation:
