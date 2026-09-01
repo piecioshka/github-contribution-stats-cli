@@ -6,7 +6,7 @@
 [![downloads count](https://img.shields.io/npm/dt/github-contribution-stats-cli.svg)](https://www.npmjs.com/~piecioshka)
 [![size](https://packagephobia.com/badge?p=github-contribution-stats-cli)](https://packagephobia.com/result?p=github-contribution-stats-cli)
 [![license](https://img.shields.io/npm/l/github-contribution-stats-cli.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/github-contribution-stats-cli/actions/workflows/ci.yml)
 
 🔨 CLI for read GitHub Contributions and Streaks
 
